@@ -1,4 +1,3 @@
-import { Responsive } from "@/components/svgs/Responsive";
 import { Head } from "@/infra/components/Head";
 import { Montserrat } from "next/font/google";
 
@@ -8,9 +7,7 @@ export default function Home() {
   return (
     <>
       <Head title="Eleve seu negocio" />
-      <main>
-        
-      </main>
+      <main></main>
     </>
   );
 }
