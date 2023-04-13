@@ -3,6 +3,8 @@ module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./src/parties/**/*.{js,ts,jsx,tsx}",
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
@@ -77,6 +79,8 @@ module.exports = {
         620: "62rem",
         650: "65rem",
         623: "62.3rem",
+        820: "82rem",
+        870: "87rem",
         920: "92rem",
         1280: "128rem",
       },
