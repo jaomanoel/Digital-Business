@@ -30,6 +30,7 @@ module.exports = {
       colors: {
         purple: "#6C63FF",
         pink: "#E44FFC",
+        dark: "#181818",
       },
       spacing: {
         2: ".2rem",
@@ -87,4 +88,7 @@ module.exports = {
     },
   },
   plugins: [],
+  corePlugins: {
+    transitionProperty: true,
+  },
 };
