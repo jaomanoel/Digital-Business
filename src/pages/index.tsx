@@ -1,4 +1,5 @@
 import { Head } from "@/infra/components/Head";
+import { Explore } from "@/parties/_Explore";
 import { Features } from "@/parties/_Features";
 import { Hero } from "@/parties/_Hero";
 import { Why } from "@/parties/_Why";
@@ -14,6 +15,7 @@ export default function Home() {
         <Hero />
         <Features />
         <Why />
+        <Explore />
       </main>
     </>
   );
