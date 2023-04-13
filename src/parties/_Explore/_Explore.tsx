@@ -6,7 +6,7 @@ interface ExploreProps {}
 
 const _Explore: React.FC<ExploreProps> = ({}) => {
   return (
-    <div className="w-full flex items-center justify-center px-16 max-[1281px]:px-0 pb-60 lg:pb-120 overflow-x-hidden">
+    <div className="w-full flex items-center justify-center px-16 max-w-[1281px]:px-0 pb-60 lg:pb-120 overflow-x-hidden">
       <div className="w-full max-w-screen-xl flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between gap-36">
         <div className="max-w-[45.5rem]">
           <h4
