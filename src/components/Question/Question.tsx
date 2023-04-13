@@ -1,5 +1,5 @@
 import { QuestionProps } from "@/hooks/questionHooks/questionHooks";
-import React from "react";
+import React, { useEffect } from "react";
 import { Arrow } from "../svgs/Arrow";
 
 const Question: React.FC<QuestionProps> = ({ question, answer, open }) => {
@@ -11,7 +11,7 @@ const Question: React.FC<QuestionProps> = ({ question, answer, open }) => {
         </span>
 
         <Arrow
-          className={`w-36 h-36 transition-transform ease-linear delay-[1s] duration-[1s] ${
+          className={`w-36 h-36 transition-transform ease-linear duration-[.4s] ${
             open ? "rotate-180" : "rotate-0"
           }`}
         />
