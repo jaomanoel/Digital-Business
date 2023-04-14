@@ -6,7 +6,7 @@ const Question: React.FC<QuestionProps> = ({ question, answer, open }) => {
   return (
     <div className="bg-purple w-full flex flex-col text-white items-start rounded-3xl px-12 py-8">
       <div className="w-full flex items-center justify-between">
-        <span className="font-montserrat font-bold text-[1.7rem] md:text-xl">
+        <span className="font-montserrat font-bold w-[80%] text-left text-[1.7rem] md:text-xl">
           {question}
         </span>
 
