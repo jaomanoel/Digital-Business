@@ -1,1 +1,1 @@
-export { setQuestion } from "./questionHooks";
+export { useQuestion } from "./questionHooks";
