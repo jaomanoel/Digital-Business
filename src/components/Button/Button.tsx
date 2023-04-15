@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
       className={`flex items-center bg-gradient-to-r from-purple to-pink justify-center rounded-full px-4 py-4 ${
         !!propsLink ? propsLink : ""
       }`}
-      href={url}
+      href={url === "#" ? "https://wa.me/message/3RBRQY4FYXPKB1" : url}
       target={"_blank"}
     >
       <p
