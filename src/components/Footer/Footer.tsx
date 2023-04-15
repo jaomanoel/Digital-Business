@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface FooterProps {}
@@ -18,12 +19,20 @@ const Footer: React.FC<FooterProps> = () => {
           <p className="text-white">JoãoManoel©2023</p>
 
           <div className="flex text-center items-center gap-12 lg:gap-24">
-            <a href="#" className="hover:underline">
+            <Link
+              href="/privacy-policy"
+              target={"_blank"}
+              className="hover:underline"
+            >
               POLITICA DE PRIVACIDADE
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link
+              href="/terms-of-use"
+              target={"_blank"}
+              className="hover:underline"
+            >
               TERMOS DE USO
-            </a>
+            </Link>
           </div>
         </div>
       </div>
