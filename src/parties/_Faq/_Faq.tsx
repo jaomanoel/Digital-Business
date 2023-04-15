@@ -8,11 +8,7 @@ interface FaqProps {}
 const _Faq: React.FC<FaqProps> = ({}) => {
   const questions = useQuestion();
 
-  const questionList = useMemo(() => {
-    console.log(questions.getQuestions());
-
-    return questions.getQuestions();
-  }, [questions]);
+  const questionList = useMemo(() => questions.getQuestions(), [questions]);
 
   const handleClick = (index: number) => {
     const newQuestions = questionList.map((question, i) => {
