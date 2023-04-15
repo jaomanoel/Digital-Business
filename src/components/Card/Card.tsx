@@ -9,7 +9,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, text, children }) => {
   return (
-    <div className="flex items-start w-full lg:w-250 flex-col gap-16">
+    <div className="flex items-start w-full max-w-xl sm:w-300 lg:w-250 flex-col gap-16">
       {children}
       <h3 className="font-bold w-full text-2xl font-montserrat text-center md:text-left">
         {title}
