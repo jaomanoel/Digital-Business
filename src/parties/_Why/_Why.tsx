@@ -8,9 +8,14 @@ const _Why: React.FC<WhyProps> = () => {
   return (
     <div className="w-full flex items-center justify-center px-16 xl:px-0 pb-60 lg:pb-120 overflow-x-hidden">
       <div className="w-full max-w-screen-xl flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-36">
-        <Online className="w-full h-full md:w-600 md:h-[55rem] lg:w-[78.8rem] lg:h-[69.6rem]" />
+        <div
+          data-aos="slide-right"
+          className="w-full h-full md:w-600 md:h-[55rem] lg:w-[78.8rem] lg:h-[69.6rem]"
+        >
+          <Online className="w-full h-full md:w-600 md:h-[55rem] lg:w-[78.8rem] lg:h-[69.6rem]" />
+        </div>
 
-        <div className="max-w-[45.5rem]">
+        <div data-aos="slide-left" className="max-w-[45.5rem]">
           <h3
             className="font-montserrat font-bold text-[2.8rem] lg:text-4xl
 					  text-center lg:text-left leading-none pb-20 lg:pb-24"

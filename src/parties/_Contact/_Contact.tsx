@@ -78,7 +78,7 @@ const _Contact: React.FC<ContactProps> = () => {
       <Line props="flex-1 h-4 rounded-none" />
 
       <div className="w-[95%] xl:w-full h-full max-w-screen-xl flex flex-col lg:flex-row items-center justify-center lg:justify-between py-30 lg:p-30 bg-gradient-to-r from-purple to-pink rounded-3xl gap-24 lg:0">
-        <div>
+        <div data-aos="fade-up">
           <h5 className="font-montserrat font-bold text-white text-[2.8rem] lg:text-4xl">
             Ficou com duvida?
           </h5>
@@ -115,6 +115,7 @@ const _Contact: React.FC<ContactProps> = () => {
             name="name"
             onChange={(e) => input(e)}
             value={info.name}
+            animate="slide-right"
           />
 
           <Input
@@ -131,6 +132,7 @@ const _Contact: React.FC<ContactProps> = () => {
             name="email"
             onChange={(e) => input(e)}
             value={info.email}
+            animate="slide-left"
           />
 
           <Input
@@ -147,10 +149,12 @@ const _Contact: React.FC<ContactProps> = () => {
             name="desc"
             onChange={(e) => input(e)}
             value={info.desc}
+            animate="slide-right"
           />
 
           <button
             type="submit"
+            data-aos="fade-up"
             className="w-full flex items-center justify-center bg-white hover:bg-gradient-to-r from-purple to-pink rounded-lg drop-shadow-3xl"
           >
             <span className="w-full h-full py-8 px-12 uppercase font-montserrat font-bold text-transparent hover:text-white text-lg bg-clip-text bg-gradient-to-r from-purple to-pink">

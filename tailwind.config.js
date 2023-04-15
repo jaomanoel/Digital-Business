@@ -27,10 +27,14 @@ module.exports = {
       "9xl": "10rem", // 100px
     },
     extend: {
+      dropShadow: {
+        "3xl": "0px 7px 6px rgba(15, 14, 34, 0.3)",
+      },
       colors: {
         purple: "#6C63FF",
         pink: "#E44FFC",
         dark: "#181818",
+        shadow: "hsl(243, 43, 9)",
       },
       spacing: {
         2: ".2rem",

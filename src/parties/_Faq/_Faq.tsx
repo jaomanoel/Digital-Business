@@ -1,7 +1,6 @@
 import { Question } from "@/components/Question";
 import { useQuestion } from "@/hooks/questionHooks";
-import { QuestionProps } from "@/hooks/questionHooks/questionHooks";
-import React, { useMemo, useState } from "react";
+import React, { useMemo } from "react";
 
 interface FaqProps {}
 
@@ -26,15 +25,20 @@ const _Faq: React.FC<FaqProps> = ({}) => {
     <div className="w-full flex items-center justify-center px-16 xl:px-0 pb-60 lg:pb-120 overflow-x-hidden">
       <div className="w-full max-w-screen-lg flex flex-col items-center justify-center">
         <h6
+          data-aos="fade-up"
           className="font-montserrat font-bold text-[2.8rem] lg:text-4xl
 					  text-center lg:text-left leading-none pb-20 lg:pb-24"
         >
           Perguntas frequentes
         </h6>
 
-        <div className="bg-dark flex flex-col items-center justify-center w-full gap-30 rounded-3xl px-20 py-20 md:px-40 md:py-40">
+        <div
+          data-aos="slide-right"
+          className="bg-dark flex flex-col items-center justify-center w-full gap-30 rounded-3xl px-20 py-20 md:px-40 md:py-40"
+        >
           {questionList.map((item, index) => (
             <button
+              data-aos="slide-left"
               key={index}
               className="w-full"
               onClick={() => handleClick(index)}

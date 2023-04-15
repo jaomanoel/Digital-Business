@@ -16,7 +16,10 @@ const _Features: React.FC<FeaturesProps> = ({}) => {
           </h2>
         </div>
 
-        <div className="px-16 lg:px-0 flex flex-col xl:flex-row items-center lg:items-start justify-center gap-40 w-fit">
+        <div
+          data-aos="slide-up"
+          className="px-16 lg:px-0 flex flex-col xl:flex-row items-center lg:items-start justify-center gap-40 w-fit"
+        >
           {[
             {
               img: (
