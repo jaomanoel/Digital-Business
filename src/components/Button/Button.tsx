@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
       target={"_blank"}
     >
       <p
-        className={`font-bold font-montserrat rounded-full bg-white text-xl lg:text-2xl text-center w-full h-full px-26 py-12 transition-all hover:text-white hover:bg-gradient-to-r from-purple to-pink  ${
+        className={`font-bold font-montserrat rounded-full bg-white text-lg lg:text-xl text-center w-full h-full px-26 py-12 transition-all hover:text-white hover:bg-gradient-to-r from-purple to-pink  ${
           !!propsText ? propsText : ""
         }`}
       >

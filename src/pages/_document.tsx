@@ -16,6 +16,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <body>
         <Main />

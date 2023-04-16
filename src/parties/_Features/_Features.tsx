@@ -17,7 +17,7 @@ const _Features: React.FC<FeaturesProps> = ({}) => {
         </div>
 
         <div
-          data-aos="slide-up"
+          data-aos="fade-up"
           className="px-16 lg:px-0 flex flex-col xl:flex-row items-center lg:items-start justify-center gap-40 w-fit"
         >
           {[
