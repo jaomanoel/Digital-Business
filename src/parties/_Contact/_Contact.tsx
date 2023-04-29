@@ -87,9 +87,13 @@ const _Contact: React.FC<ContactProps> = () => {
           </p>
         </div>
 
-        <div className="block w-full h-2 lg:w-2 lg:h-200 bg-white"></div>
+        <div
+          data-aos="fade-up"
+          className="block w-full h-2 lg:w-2 lg:h-200 bg-white"
+        ></div>
 
         <form
+          data-aos="slide-left"
           onSubmit={(e) => handleSubmit(e)}
           className="w-4/5 sm:w-[39rem] flex flex-col gap-8 items-center justify-center"
         >
@@ -115,7 +119,6 @@ const _Contact: React.FC<ContactProps> = () => {
             name="name"
             onChange={(e) => input(e)}
             value={info.name}
-            animate="slide-right"
           />
 
           <Input
@@ -132,7 +135,6 @@ const _Contact: React.FC<ContactProps> = () => {
             name="email"
             onChange={(e) => input(e)}
             value={info.email}
-            animate="slide-left"
           />
 
           <Input
@@ -149,12 +151,10 @@ const _Contact: React.FC<ContactProps> = () => {
             name="desc"
             onChange={(e) => input(e)}
             value={info.desc}
-            animate="slide-right"
           />
 
           <button
             type="submit"
-            data-aos="fade-up"
             className="w-full flex items-center justify-center bg-white hover:bg-gradient-to-r from-purple to-pink rounded-lg drop-shadow-3xl"
           >
             <span className="w-full h-full py-8 px-12 uppercase font-montserrat font-bold text-transparent hover:text-white text-lg bg-clip-text bg-gradient-to-r from-purple to-pink">
